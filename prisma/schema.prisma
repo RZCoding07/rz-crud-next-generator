@@ -1,0 +1,18 @@
+// This is a sample schema. When using the CRUD Generator, 
+// Prisma will introspect your actual database to extract the real schema.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Sample model - your actual tables will be introspected from the database
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+}
