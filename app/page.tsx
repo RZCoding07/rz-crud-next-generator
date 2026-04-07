@@ -142,7 +142,17 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-white">RZ CRUD Generator</h1>
-              <p className="text-slate-400 mt-1">Generate production-ready CRUD interfaces in seconds</p>
+              <p className="text-slate-400 mt-1">
+                Generate production-ready CRUD interfaces in seconds |{' '}
+                <a 
+                  href="https://github.com/RZCoding07/rz-crud-next-generator" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                >
+                  Check my GitHub
+                </a>
+              </p>
             </div>
             <div className="flex items-center gap-2 text-slate-400">
               <span className="text-sm">Step {step}</span>
