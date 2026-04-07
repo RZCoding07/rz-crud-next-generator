@@ -36,8 +36,8 @@ export function CodePreview({ files }: CodePreviewProps) {
       <CardContent className="space-y-4">
         <Tabs defaultValue="files" className="w-full">
           <TabsList className="grid w-full grid-cols-2 bg-slate-700">
-            <TabsTrigger value="files" className="text-slate-200">Files</TabsTrigger>
-            <TabsTrigger value="preview" className="text-slate-200">Preview</TabsTrigger>
+            <TabsTrigger value="files" className="text-cyan-500">Files</TabsTrigger>
+            <TabsTrigger value="preview" className="text-cyan-500">Preview</TabsTrigger>
           </TabsList>
 
           <TabsContent value="files" className="space-y-4 mt-4">
